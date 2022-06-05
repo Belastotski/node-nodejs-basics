@@ -6,6 +6,7 @@
   "scripts": {
     "fs:create": "node src/fs/create.js",
     "fs:copy": "node src/fs/copy.js",
+    "fs:rename": "node src/fs/rename.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

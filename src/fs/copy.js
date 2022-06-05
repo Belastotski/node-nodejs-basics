@@ -1,5 +1,5 @@
 import { resolve, join, dirname } from "path";
-import { readdir, mkdir, rm, copyFile } from "fs/promises";
+import { readdir, mkdir, copyFile } from "fs/promises";
 import { fileURLToPath } from "url";
 
 export const copy = async () => {
