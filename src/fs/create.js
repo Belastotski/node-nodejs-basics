@@ -9,9 +9,9 @@ export const create = async () => {
     let file = path.join(__dirname,'files','fresh.txt');
     access(file).then( _ => {throw new Error('FS operation failed')})
     .catch( e => { 
-        e.code == "ENOENT"
-        ?writeFile(file, 'I am fresh and young')
-        :console.error(e);
+         if (e.code == "ENOENT")
+            writeFile(file, 'I am fresh and young')
+        else throw e;
     })
 };
 
